@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Koh+Santepheap:wght@100&display=swap');
+
+body{
+  background-color: hsl(233, 47%, 7%);
+  padding: 50px;
+}
+.main-container-black{
+    width: 1000px;
+    height: 500px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Koh Santepheap', cursive;
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 15px;
+  background-color: hsl(244, 38%, 16%);
+  width: 550px;
+  padding: 50px;
+}
+.right-side img{
+  position: absolute;
+  margin-top: 0;
+  padding-right: 35px;
+  height: 500px;
+}
+
+.media{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 400;
+}
+h1 span{
+  color: hsl(277, 64%, 61%);
+}
+h1, h2{
+  color: hsl(0, 0%, 100%);
+}
+
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-weight: 400;
+}
+.attribution span{
+  color: hsl(0, 0%, 100%);
+}
+.attribution{
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 365px) and (max-width: 480px){
+  .media{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .right-side img{
+    position: absolute;
+    margin-top: 0;
+    height: 300px;
+    width: 350px;
+}
+.left-side{
+  font-size: 12px;
+  width: 250px;
+  text-align: center;
+  margin-left: 0;
+}
+.main-container-black{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  body{
+    padding: 0;
+}
+.attribution span{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+}
